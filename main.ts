@@ -27,6 +27,8 @@ let numerosReversos = listaReversa<number>(numeros);
 console.log(nomesReversos);
 console.log(numerosReversos);
 
+console.log("----------------------------------------")
+
 //Exemplo click
 class ClickHandler{
     constructor(){
@@ -90,6 +92,29 @@ console.log("------------------------------------");
 let session4 = "session4";
 localStorage.setItem(session4, "Isso é uma sessão local");
 console.log(localStorage.getItem(session4));
+
+let nome2 = new Set(["Luiz", "Gustavo"]);
+console.log(nome2);
+
+for (let puxar of nome2){
+    console.log(puxar);
+}
+
+console.log("---------------------------------")
+
+var promise = new Promise((aceitar, rejeitar) => {
+    let isOpened : boolean = false;
+    if (isOpened){
+        aceitar ("Aberto ");
+    }else {
+        rejeitar("Fechado");
+    }
+});
+    promise.then((fromAceitar)=>{
+        console.log(fromAceitar);        
+    }).catch((fromRejeitar)=>{
+        console.log(fromRejeitar);
+    })
 
 
 
